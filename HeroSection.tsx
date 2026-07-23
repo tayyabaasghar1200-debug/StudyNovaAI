@@ -71,7 +71,7 @@ export default function HeroSection() {
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white text-xs font-semibold"
             >
               <Sparkles size={12} />
-              New: AI Study Planner
+            ✨ New: Smart AI Study Planner
             </motion.div>
           </motion.div>
 
@@ -96,8 +96,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-center text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Generate notes, quizzes, flashcards, and study plans instantly with AI.
-            The all-in-one platform built for modern students who want to excel.
+        Generate AI-powered notes, quizzes, flashcards, summaries, and personalized study plans—all in one place. Study faster, stay organized, and achieve better results with StudyNovaAI.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -133,7 +132,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500 dark:text-slate-400 mb-16"
           >
-            {["No credit card required", "Free forever plan", "10,000+ students"].map((text) => (
+            {[{["No credit card required", "Free forever plan", "Built for students"] (].map((text) => (
               <div key={text} className="flex items-center gap-1.5">
                 <CheckCircle2 size={15} className="text-green-500" />
                 {text}
@@ -169,11 +168,12 @@ export default function HeroSection() {
               <div className="p-6 bg-gradient-to-br from-slate-50 to-white dark:from-[#0d1124] dark:to-[#080e1f]">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                   {/* Stat cards */}
-                  {[
-                    { label: "Study Streak", value: "15 🔥", color: "from-orange-500 to-red-500", bg: "bg-orange-50 dark:bg-orange-900/10" },
-                    { label: "Notes Generated", value: "128 📝", color: "from-blue-500 to-cyan-500", bg: "bg-blue-50 dark:bg-blue-900/10" },
-                    { label: "Quizzes Aced", value: "47 ✨", color: "from-violet-500 to-purple-600", bg: "bg-violet-50 dark:bg-violet-900/10" },
-                  ].map((stat) => (
+                  [
+  { label: "AI Tools", value: "8+", color: "from-orange-500 to-red-500", bg: "bg-orange-50 dark:bg-orange-900/10" },
+  { label: "Study Features", value: "15+", color: "from-blue-500 to-cyan-500", bg: "bg-blue-50 dark:bg-blue-900/10" },
+  { label: "Free to Start", value: "100%", color: "from-violet-500 to-purple-600", bg: "bg-violet-50 dark:bg-violet-900/10" },
+  ].map((stat) => 
+              
                     <div key={stat.label} className={`${stat.bg} rounded-2xl p-4 border border-slate-200/60 dark:border-slate-700/30`}>
                       <p className="text-xs text-slate-500 dark:text-slate-400 mb-1">{stat.label}</p>
                       <p className="text-2xl font-bold text-slate-900 dark:text-white">{stat.value}</p>
@@ -204,10 +204,11 @@ export default function HeroSection() {
                   <div className="bg-white dark:bg-slate-800/40 rounded-2xl p-4 border border-slate-200/60 dark:border-slate-700/30">
                     <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-3">AI Tools Used Today</h4>
                     <div className="space-y-2.5">
-                      {[
-                        { name: "Notes Generator", progress: 80, color: "bg-blue-500" },
-                        { name: "Quiz Generator", progress: 60, color: "bg-violet-500" },
-                        { name: "Flashcards", progress: 45, color: "bg-cyan-500" },
+                        [
+                   { name: "Notes Generator", progress: 100, color: "bg-blue-500" },
+                   { name: "Quiz Generator", progress: 100, color: "bg-violet-500" },
+                  { name: "Flashcards", progress: 100, color: "bg-cyan-500" },
+]
                       ].map((item) => (
                         <div key={item.name}>
                           <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
