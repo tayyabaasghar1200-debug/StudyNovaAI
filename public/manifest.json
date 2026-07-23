@@ -1,0 +1,16 @@
+{
+  "name": "StudyNovaAI",
+  "short_name": "StudyNovaAI",
+  "description": "AI-Powered Education Platform for Students",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070f",
+  "theme_color": "#4f6ef7",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
