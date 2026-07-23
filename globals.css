@@ -392,3 +392,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  }
